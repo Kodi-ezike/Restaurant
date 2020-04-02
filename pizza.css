@@ -1,10 +1,11 @@
 body{
     color:red;
-font-size:14pt;
+    font-size: 14pt;
+
 }
 @media screen and (max-width:600px){
-    body{font-size:12pt}
-}
+    body{font-size: 12pt;}
+}   
     
 h1{
     text-align: center;
@@ -68,19 +69,21 @@ button{
 .flex-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 img{
     height: 270px;
     width: 270px;
-    padding-bottom: 10px;
-    margin-left: 3rem;
+    margin-bottom: 10px;
+    margin-left: 20px;
     margin-right: 20px;
 
 }
 @media screen and (max-width:600px){
     img{
-        margin-left: 25px;
-        margin-right: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 a{
@@ -94,8 +97,8 @@ color: white;
 .order{
     box-sizing:border-box;
     border-radius: 10px;
-    height: 25%;
-    width: 25%;
+    height:25%;
+    width:25%;
     border-color: red;
     border: 2px solid red;
     margin-bottom: 5pt;
@@ -106,25 +109,35 @@ color: white;
     margin-left: 4rem;
     font-size: 14pt;
 } 
+
+@media screen and (max-width:768px){
+    .order{width: 50%;}
+}
+@media screen and (min-width:992px){
+    .order{width: 40%;}
+}
+@media screen and (min-width:1200px){
+    .order{width: 25%;}
+}
 @media screen and (max-width:600px){
     .order{
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 }
+
 .order a{
     text-decoration: none;
 }
 .pizza{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 @media screen and (max-width:600px){
     .pizza{display: flex;
         flex-direction:column ;
-    }
-    .order{
-        width: 100%;
     }
 }
