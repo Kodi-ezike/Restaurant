@@ -1,6 +1,9 @@
 body{
     color:red;
-
+font-size:14pt;
+}
+@media screen and (max-width:600px){
+    body{font-size:12pt}
 }
     
 h1{
@@ -70,7 +73,7 @@ img{
     height: 270px;
     width: 270px;
     padding-bottom: 10px;
-    margin-left: 2.5rem;
+    margin-left: 3rem;
     margin-right: 20px;
 
 }
